@@ -26,3 +26,5 @@
  
  ## 4. 使用说明
 
+## 5. 开源协议
+[![GitHub license](https://img.shields.io/github/license/Longtainbin/CSToutTxt_DataProcess)](https://github.com/Longtainbin/CSToutTxt_DataProcess/blob/master/LICENSE)
