@@ -23,6 +23,6 @@
  
  ## 3. 使用说明
 
-主要项目负责人
-参与贡献方式
-开源协议
+
+## 4. 开源协议
+[![GitHub license](https://img.shields.io/github/license/Longtainbin/CSToutTxt_DataProcess)](https://github.com/Longtainbin/CSToutTxt_DataProcess/blob/master/LICENSE)
