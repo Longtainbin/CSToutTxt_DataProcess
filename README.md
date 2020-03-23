@@ -5,6 +5,7 @@
 
 ## 2. 版本
   > version 1.0
+  https://img.shields.io/static/v1?label=version&message=1.0&color=orange
 
 ## 3. 安装
   1. 将下载的压缩包解压，应当确保 ArgumentClass.cpp、ArgumentClass.h、main.cpp 在同一目录下
