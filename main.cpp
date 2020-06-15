@@ -1,4 +1,4 @@
-﻿
+
 //Author: Tianbin Long
 //Date: 2020/3/22
 //说明： 该程序用于整理从CST导出的数据，使其能够频率点按照线性排列
@@ -37,7 +37,7 @@ void init();
 int main()
 { 
 init();
-const double delat=1E-8;
+const double delat=1E-7;
 
 ArgumentClass argum;
 argum.setAllParas();
@@ -105,8 +105,8 @@ if(strtemp.size())//跳过空行...
         
        else  if(strtemp[0]!='#'&&strtemp[0]!='-')
             { if (freIsRight(strtemp, lowLine, heiLine, gap, delat))
-        //  if(std::regex_search(strtemp, sm, pattern))    //
-       //   { if (freIsRight(sm[1].str(), lowLine, heiLine, gap, delat))
+         // if(std::regex_search(strtemp, sm, pattern))    //
+          //{ if (freIsRight(sm[1].str(), lowLine, heiLine, gap, delat))
                     {
                         v_tempLineNum[findex-1]++;
                         outStr(*sp_fout[findex-1],strtemp);
@@ -213,7 +213,7 @@ double freq=stod(str);
 if(freq>heiLine||freq<lowLine)
     return false;
 //cout<<fmod((freq-lowLine),gap)<<endl;
-bool flag=((fmod((freq-lowLine),gap)<=delat)||abs(fmod((freq-lowLine),gap)-gap)<=delat);//delat 注要是考虑0.03 不一定是0.03
+bool flag=((fabs(fmod((freq-lowLine),gap))<=(delat*gap))||fabs(fmod((freq-lowLine),gap)-gap)<=(delat*gap));//delat 注要是考虑0.03 不一定是0.03
 
 return flag;
 }
